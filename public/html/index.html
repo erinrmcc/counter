@@ -2,9 +2,26 @@
 <html>
   <head>
     <title>Counter</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
   <body>
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="text-center">I can count!</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2">
+        <div class="content">
+          <button id="subtractOne" type="button" class="float btn btn-default subtractButton" name="subtractButton"><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span></button>
+          <div id="counter" class="float counterBox">
+            <h2></h2>
+          </div>
+          <button id="addOne" type="button" class="float btn btn-default addButton" name="addButton"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span></button>
+        </div>
+      </div>
 
-    <script src='app.js'></script>
+    <script src='js/app.js'></script>
   </body>
 </html>

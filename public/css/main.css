@@ -1,0 +1,28 @@
+.content {
+  width: 150px;
+  margin: 25px auto;
+}
+
+.float {
+  float: left;
+}
+
+#counter {
+  text-align: center;
+}
+
+.subtractButton {
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.addButton {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.counterBox {
+  height: 50px;
+  width: 50px;
+  border: solid 1px grey;
+}
