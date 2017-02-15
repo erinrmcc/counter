@@ -11,6 +11,11 @@
   text-align: center;
 }
 
+h2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
 .subtractButton {
   margin-top: 5px;
   margin-right: 5px;

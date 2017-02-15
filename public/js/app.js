@@ -12,14 +12,17 @@ var counterApp = {
   },
   addEventListeners: function(){ //waits for the click on the create button
     this.subtractButton.addEventListener('click', this.subtractNumber); //this.subtractNumber - run this function
+    this.subtractButton.addEventListener('click', this.changeColorDown);
     this.addButton.addEventListener('click', this.addNumber); //this.addNumber - run this function
+    this.addButton.addEventListener('click', this.changeColorUp); //this.addNumber - run this function
+
   },
   render: function(){
     console.log(counterApp.counter);
     this.counterNumber.innerHTML = counterApp.formatNumber(counterApp.counter); //interprets HTML in javascript versus reading it as text (innerText)
   },
   formatNumber: function(counter){ //this is a method
-  return `<h2>${counter}</h2>`; //template literal - this is a single string
+  return `<h2 id="number">${counter}</h2>`; //template literal - this is a single string
   },
   subtractNumber: function (){
      counterApp.counter -= 1
@@ -28,7 +31,17 @@ var counterApp = {
   addNumber: function (){
      counterApp.counter += 1
      counterApp.render();
+  },
+  changeColorDown: function(){
+    counterApp.counterStyle = document.querySelector('#number');
+    counterApp.counterStyle.style.color = 'red';
+  },
+  changeColorUp: function(){
+    counterApp.counterStyle = document.querySelector('#number');
+    counterApp.counterStyle.style.color = 'green';
+    console.log('I work!');
   }
 };
 
-  counterApp.init(); // will run init
+
+counterApp.init(); // will run init
